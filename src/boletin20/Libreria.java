@@ -22,8 +22,13 @@ public class Libreria {
     }
     
     public void ver(){
-        int k = Integer.parseInt(JOptionPane.showInputDialog("Posicion del libro que quieres ver"));
-        JOptionPane.showMessageDialog(null, inventario.get(k).toString());
+        String titu = (JOptionPane.showInputDialog("Titulo del libro que quieres ver"));
+        for (int i=0; i<inventario.size();i++){
+            if (titu.equalsIgnoreCase(inventario.get(i).getTítulo())){
+                JOptionPane.showMessageDialog(null, inventario.get(i).toString());
+            }
+        }
+        //JOptionPane.showMessageDialog(null, inventario.get(k).toString());
     }
     public void vender(){
         int k = Integer.parseInt(JOptionPane.showInputDialog("Posicion del libro que se vende"));
