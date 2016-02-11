@@ -28,7 +28,7 @@ public class Libreria {
                 JOptionPane.showMessageDialog(null, inventario.get(i).toString());
             }
         }
-        //JOptionPane.showMessageDialog(null, inventario.get(k).toString());
+        
     }
     public void vender(){
         int k = Integer.parseInt(JOptionPane.showInputDialog("Posicion del libro que se vende"));
