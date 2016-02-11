@@ -22,7 +22,7 @@ public class Libreria {
     }
     
     public void ver(){
-        String titu = (JOptionPane.showInputDialog("Titulo del libro que quieres ver"));
+        String titu = (JOptionPane.showInputDialog("Titulo del libro que se quiere ver."));
         for (int i=0; i<inventario.size();i++){
             if (titu.equalsIgnoreCase(inventario.get(i).getTítulo())){
                 JOptionPane.showMessageDialog(null, inventario.get(i).toString());
