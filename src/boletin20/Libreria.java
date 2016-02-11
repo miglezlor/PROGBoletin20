@@ -31,7 +31,7 @@ public class Libreria {
         nlibros = nlibros - 1;
         if (nlibros==0){
             inventario.remove(k);
-            JOptionPane.showMessageDialog(null, "Ya no hay unidades");
+            JOptionPane.showMessageDialog(null, "Ya no hay unidades de este libro.");
         }
         else{
             inventario.get(k).setNumUnidades(nlibros);
