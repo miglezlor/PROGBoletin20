@@ -14,7 +14,7 @@ public class Boletin20 {
         int opcion;
         do{
             
-            opcion=Integer.parseInt(JOptionPane.showInputDialog("OPCIONES: \n 1. Añadir libro. \n 2. Vender libro. \n 3. Ordenar. \n 4. Ver \n 5. Ver stock"));
+            opcion=Integer.parseInt(JOptionPane.showInputDialog("OPCIONES: \n 1. Añadir libro. \n 2. Vender libro. \n 3. Ordenar. \n 4. Ver libro en concreto. \n 5. Ver stock"));
             
             switch(opcion){
                 case 1 : stock.engadirLibro();
